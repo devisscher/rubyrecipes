@@ -1,0 +1,8 @@
+.container
+	.form-inline
+		.form-group
+			.nested-fields
+				.form-group
+					= f.input :step, input_html: { class: "form-input form-control" }
+				.form-group
+					= link_to_remove_association "remove", f, class: "form-button" 
